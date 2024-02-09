@@ -1,0 +1,132 @@
+/* ex1 1)*/
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
+/* ex1 2)*/
+article>h2{
+    color: green;
+}
+
+/* ex1 3)*/
+h2+p{
+    color: blue;
+    font-style: italic;
+}
+
+/* ex1 4)*/
+h1{
+    text-shadow: 10px;
+
+}
+
+/* ex1 5)*/
+h1 +img +img{
+    height: 200px;
+    /*height juste pour la clarite de l'image*/
+    border-radius: 40%;
+}
+/*Exercice 2*/
+#ex2{
+    height:280px ;
+    width: 280px;
+    background-color: darkblue;
+}
+
+#ex2:hover{
+    transform: translate(300px,300px) rotate(35deg) ;
+}
+
+@media (max-width=670px){
+    .ex2{
+        background-color: red;
+    }
+}
+
+/* Exercice 3 */
+*{
+padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+}
+.name{
+    font-size: 45px;
+    color: white;
+    height: 80px;
+}
+.mini_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkcyan;
+}
+.mini_cont>div>ul{
+    display: flex;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
+    margin-right: 5%;
+}
+li:active{
+    background-color: aquamarine;
+    width: 40px;
+    height: 20px;
+    margin-right: 5%;
+}
+
+/* Exercice 4 */
+#cont{
+    width: 70%;
+    height: 400px;
+}
+.imgcont1>img{
+    height:100px;
+    width: 100px;
+    border-radius: 45%;
+}
+.imgcont2>img{
+    height: 100px;
+    width: 100px;
+    border-radius: 45%;
+}
+.imgcont1{
+    display: flex;
+    justify-content:space-between;
+}
+.imgcont2{
+    display: flex;
+    justify-content: center;
+}
+
+/* Exercice 5 */
+#boite{
+    background-color: red;
+    position: relative;
+    width: 100px;
+    height:100px ;
+    animation-name: redBox;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes redBox { 
+    0%{
+        left: 10px;
+    }
+    50%{
+        
+    }
+    100%{
+        left: 400px;
+    }
+}
